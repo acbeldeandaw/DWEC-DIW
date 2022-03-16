@@ -1,0 +1,29 @@
+<div class="container">
+    <div *ngIf="users" class="container my-2">
+        <div class="row">
+            <div *ngFor="let x of users.data" class="card col-2">
+                <img src="{{x.avatar}}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{x.first_name}} {{x.last_name}}</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{ x.email }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div *ngIf="users" class="container my-2">
+        <div class="row">
+            <div *ngFor="let x of resources.data" [ngStyle]="{'background-color': x.color}" class="card col-2">
+                <div class="card-body">
+                    <h5 class="card-title">{{x.name}}</h5>
+                    <h5 class="card-title">{{x.year}}</h5>
+                    <h5 class="card-title">{{x.color}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

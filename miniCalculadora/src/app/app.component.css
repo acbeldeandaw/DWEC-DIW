@@ -1,0 +1,14 @@
+input {
+    width: 260px;
+    margin: 0 auto;
+}
+
+.specialName {
+    text-decoration: underline;
+    font-weight: bold;
+    color: green;
+}
+
+.longName {
+    border: 1px solid black;
+}

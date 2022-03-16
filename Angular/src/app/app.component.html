@@ -1,0 +1,37 @@
+<h1>{{ title }}</h1>
+<p>{{ description }}</p>
+<div [hidden]="hidden">
+    aaaa
+</div>
+
+<select name="" id="">
+  <option [selected]="selected1" value="coche">Coche</option>
+  <option [selected]="selected2" value="moto">Moto</option>
+  <option [selected]="selected3" value="camion">Camión</option>
+</select>
+
+<label for="coche">
+  <input type="radio" name="vehicle" id="coche" value="coche" [checked]="checked1">Coche
+</label>
+<label for="moto">
+  <input type="radio" name="vehicle" id="moto" value="moto" [checked]="checked2">Moto
+</label>
+<label for="camion">
+  <input type="radio" name="vehicle" id="camion" value="camion" [checked]="checked3">Camión
+</label>
+
+<br> Opciones: {{ option }}
+<br>
+<label for="op1">
+  <input type="radio" name="opcion" id="op1" value="op1" (click)="setOption($event)">Opción 1
+</label>
+<label for="op2">
+  <input type="radio" name="opcion" id="op2" value="op2" (click)="setOption($event)">Opción 2
+</label>
+
+<br><br>
+<button (click)="greet()">Hi</button>
+
+<br><br>
+<p>Tu nombre es {{ nombre }}</p>
+<input type="text" [(ngModel)]="nombre">

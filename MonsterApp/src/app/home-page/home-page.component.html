@@ -1,0 +1,27 @@
+<form class="col-12 col-md-2 mx-auto my-2 p-4 border border-dark shadow text-center">
+    <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name">
+    </div>
+    <div class="mb-3">
+        <label for="name" class="form-label">Raza</label>
+        <select class="form-select" name="race" [(ngModel)]="race">
+          <option *ngFor="let r of getRaces()" value="{{ r }}">{{ r }}</option>
+      </select>
+    </div>
+    <div class="mb-3">
+        <label for="atk" class="form-label">Ataque</label>
+        <input type="number" class="form-control" id="atk" name="atk" min="1" max="100" [(ngModel)]="atk">
+    </div>
+    <div class="mb-3">
+        <label for="hp" class="form-label">Vida</label>
+        <input type="number" class="form-control" id="hp" name="hp" min="1" max="1000" [(ngModel)]="hp">
+    </div>
+    <button (click)="create()" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+      <mat-icon>plus_one</mat-icon>
+    </button>
+
+</form>
+
+<app-monster-c *ngFor="let monster of monsters; let index = index;" [monster]="monster">
+</app-monster-c>

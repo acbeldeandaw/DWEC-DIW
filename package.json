@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@types/jquery": "^3.5.13",
+    "ts-node": "^10.5.0",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}

@@ -1,0 +1,18 @@
+<div class="container-fluid my-2" *ngIf="monster">
+    <div class="row d-flex justify-content-center">
+        <div class="list-group col-5 border border-dark shadow p-0">
+            <div class="ms-2 me-auto">
+                Nombre: {{ monster.name }}
+            </div>
+            <div class="ms-2 me-auto">
+                Raza: {{ monster.race }}
+            </div>
+            <div class="ms-2 me-auto">
+                Vida: {{ monster.hp }}
+            </div>
+            <div class="ms-2 me-auto">
+                Ataque: {{ monster.atk }}
+            </div>
+        </div>
+    </div>
+</div>

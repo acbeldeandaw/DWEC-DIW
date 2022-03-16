@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+
+    <script>
+        let str = prompt("Introduce tu nombre, apellidos y año de nacimiento (ex: Pepe Perez Sanchez 1990):");
+        let strArray = str.split(" ");
+        let username = strArray[0].substring(0, 1) +
+            strArray[1] +
+            strArray[2].substring(0, 1) +
+            strArray[3].substring(2, 4);
+        username = username.toLowerCase();
+        let vowels = (str.match(/[aeiou]/gi) != null) ? str.match(/[aeiou]/gi) : "";
+        let nameAndSurname = str.substring(0, str.length - 5);
+
+        document.write("Cadena en mayúsculas: " + str.toUpperCase() + "<br>");
+        document.write("Muestra de nombre, apellido1, apellido2 y año, cada cuál en una línea: <br>");
+        strArray.forEach(element => {
+            document.write(element + "<br>");
+        });
+        document.write("Nombre de usuario: " + username + "<br>");
+        document.write("Número de vocales que contiene la cadena de nombre y apellidos: " + vowels.length + "<br>");
+        document.write("Tamaño total de toda la cadena: " + str.length + "<br>");
+        document.write("Tamaño de la cadena que contiene, únicamente, nombre y dos apellidos: " + nameAndSurname.length + "<br>");
+    </script>
+
+</body>
+
+</html>

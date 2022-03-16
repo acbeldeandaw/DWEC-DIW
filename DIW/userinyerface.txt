@@ -1,0 +1,28 @@
+--- Cosas que mejorar/rediseñar ---
+1. El link "HERE" malamente mostrado
+2. El botón de "NO" completamente sin uso
+3. "next page" sin función alguna
+4. Cookies en el header que no se llegan a ver si no haces scroll hacia arriba
+5. Información de cookies sin poder rechazar
+6. Botones de las partes cambiando de color sin sentido
+7. Contenido del formulario igual al placeholder
+8. Modal con botón de cerrado muy difícil de apreciar
+9. Botones de reset, cancel y next malamente organizados y estilados
+10. Información de contraseña segura que da a entender de que no lo es
+11. Para aceptar los terminos hay que desmarcar la casilla
+12. Modal de ayuda totalmente erróneo
+13. TOS sin facilidad de poder avanzar
+14. Botón de subir foto de perfil mal diseñado
+15. Circulo de cargando infinito
+16. Para seleccionar 3 intereses hay que deseleccionar casi todos los demás
+17. Opciones de selección entre las opciones a seleccionar malamente organizadas
+18. Botones next y cancel con colores que no los representan
+19. Número en el formulario que solo se puede cambiar con las flechas
+20. Input de edad difícil de usar
+21. Input de país que no ofrece el nombre del mismo
+22. Input de meses desordenados
+23. Input de año que empieza por el último
+24. Botón de selección de género que cambia de uno a otro en vez de seleccionar el que eliges
+25. Edad y fecha de nacimiento que tienen que coincidir mientras que son difíciles de asignar
+26. Género seleccionado mal indicado
+27. Selecciones de confirmación mal posicionadas y del mismo tipo que dan a enteder cosas diferentes

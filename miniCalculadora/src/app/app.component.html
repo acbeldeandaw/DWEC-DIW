@@ -1,0 +1,43 @@
+<div class="d-flex justify-content-center align-items-center mx-auto mt-4 bg-dark" style="width: 400px; height: 300px;">
+    <div class="row">
+        <div class="text-center my-4">
+            <input type="number" class="form-control mb-1" [(ngModel)]="num1" placeholder="Número 1">
+            <input type="number" class="form-control mb-1" [(ngModel)]="num2" placeholder="Número 2">
+            <input type="number" class="form-control mb-1" value="{{ res }}" placeholder="Resultado" readonly>
+        </div>
+        <div class="text-center mb-4">
+            <button class="btn btn-secondary mx-1" (click)="suma()">Suma</button>
+            <button class="btn btn-secondary mx-1" (click)="resta()">Resta</button>
+            <button class="btn btn-secondary mx-1" (click)="multi()">Multiplicación</button>
+        </div>
+    </div>
+</div>
+
+<input type="text" [(ngModel)]="name">
+<button (click)="setName()">Add</button>
+
+<!--
+<h1 *ngIf="hasName">{{ name }}</h1>
+<h1 *ngIf="names.length > 0; else noName">{{ names }}</h1>
+
+<ng-template #noName>
+    <h1>No hay nombre añadido</h1>
+</ng-template>
+-->
+<ul>
+    <li [ngClass]="{'specialName':isSpecialName(n), 'longName':isLongName(n)}" *ngFor="let n of names;
+    let i = index;
+    let esPar = even;
+    let esPrimero = first">
+        {{ i }} - {{ n }}
+        <span *ngIf="esPrimero"> - Es primero </span>
+        <span *ngIf="esPar"> - Es par</span>
+        <span *ngIf="!esPar"> - Es impar</span>
+    </li>
+</ul>
+
+<div [ngSwitch]="names.length">
+    <p *ngSwitchCase="0">No hay ningún nombre</p>
+    <p *ngSwitchCase="1">Hay un nombre</p>
+    <p *ngSwitchDefault>Hay muchos nombres</p>
+</div>

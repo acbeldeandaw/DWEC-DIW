@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: auto auto;
+            gap: 10px;
+            padding: 10px;
+            background-color: orangered;
+        }
+        
+        .grid div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: midnightblue;
+            color: white;
+        }
+        
+        .grid div ul {
+            list-style-type: none;
+        }
+        
+        .grid div ul li:first-child {
+            color: grey;
+        }
+        
+        .grid div:first-child ul li:last-child {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+        <div>
+            <ul>
+                <li>Pera</li>
+                <li>Manzana</li>
+                <li>Naranja</li>
+                <li>Mango</li>
+                <li>Piña</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Audi</li>
+                <li>BMW</li>
+                <li>Opel</li>
+                <li>Seat</li>
+                <li>Ford</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Windows</li>
+                <li>Mac</li>
+                <li>Ubuntu</li>
+                <li>Kali</li>
+                <li>Red Hat</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Perro</li>
+                <li>Gato</li>
+                <li>Oso</li>
+                <li>Loro</li>
+                <li>Girafa</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Samsung</li>
+                <li>Sony</li>
+                <li>Microsoft</li>
+                <li>IBM</li>
+                <li>Cisco</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Macarrones</li>
+                <li>Pizza</li>
+                <li>Hamburguesa</li>
+                <li>Canelones</li>
+                <li>Espaghetis</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
